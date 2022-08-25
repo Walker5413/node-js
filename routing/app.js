@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, {'Content-Type': 'text/html'});
         fs.createReadStream(__dirname + '/index.html').pipe(res);
     }
-    else if(req.url === '/about'){
+    else if(req.url === '/about-me'){
         res.writeHead(200, {'Content-Type': 'text/html'});
         fs.createReadStream(__dirname + '/about.html').pipe(res);
     }
@@ -32,3 +32,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(3000, '127.0.0.1');
+
+
+
+
